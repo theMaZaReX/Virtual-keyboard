@@ -28,7 +28,7 @@ const keyboard = {
         //fill keyboard buttons
         this.addKeys()
 
-        this.elements.keys = document.querySelectorAll('keyboard__key');
+        this.elements.keys = document.querySelectorAll('.keyboard__key');
 
         _this.props.textAreas = document.querySelectorAll('.keyboard-input');
 

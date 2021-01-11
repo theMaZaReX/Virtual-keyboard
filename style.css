@@ -5,7 +5,8 @@
 }
 
 .keyboard-input{
-    width: 25%;
+    width: 50%;
+    max-width: 550px;
 }
 
 .keyboard{
@@ -59,7 +60,7 @@
 .keyboard__key-switch:after{
     content: "";
     position: absolute;
-    right:15px;
+    right:14%;
     width: 8px;
     height: 8px;
     border-radius:50%;
@@ -71,5 +72,30 @@
 }
 .keyboard__key--extra-wide{
     width: 50%;
-    max-width: 500px;;
+    max-width: 500px;
+}
+
+.keyboard__key--small{
+    width: 3%;
+    min-width: 34px;
+}
+@media (max-width:375px){
+.keyboard__key{
+    padding:0px;
+    }
+.keyboard__key .material-icons{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard__key--wide{
+    width:7%;
+    max-width: 100px;
+}
+
+.keyboard__key--small{
+    width: 3%;
+    min-width: 25px;
+}
 }

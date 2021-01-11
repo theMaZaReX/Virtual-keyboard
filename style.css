@@ -11,7 +11,7 @@
 .keyboard{
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
     padding: 5px 0;
     background: #004134;
@@ -29,6 +29,7 @@
 }
 
 .keyboard__key{
+    position: relative;
     width: 6%;
     max-width: 90px;
     height: 45px;
@@ -43,7 +44,7 @@
 }
 
 .keyboard__key:active {
-    background: rgba(255, 255, 255, 0.1);
+   background: rgba(255, 255, 255, 0.1);
 }
 
 .keyboard__key:focus {
@@ -55,7 +56,19 @@
     max-width: 100px;
     font-size: 1.05rem;
 }
+.keyboard__key-switch:after{
+    content: "";
+    position: absolute;
+    right:15px;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+.keyboard__key-switch--active:after{
+    background-color: #08ff00;
+}
 .keyboard__key--extra-wide{
     width: 50%;
     max-width: 500px;;
